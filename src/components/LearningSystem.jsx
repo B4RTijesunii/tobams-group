@@ -1,7 +1,7 @@
 import React from "react";
 import learning from "../assets/learning.jpg";
 import corporate from "../assets/corporate.jpg";
-import { Zap } from "lucide-react";
+
 import LightningIcon from "../assets//lightning.svg?react";
 import personalized from "../assets/personalized-training.jpg";
 import capacity from "../assets/capacity.jpg";
