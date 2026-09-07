@@ -61,7 +61,7 @@ function Consultant() {
         </div>
       </section>
       <section className="gap-[32px] xl:px-[64px] xl:py-[32px] px-[24px] py-[32px] bg-white">
-        <div className="max-w-[1312px] mx-auto rounded-[8px] bg-primary text-center gap-[32px] xl:px-[64px] xl:py-[32px] px-[24px] py-[32px] items-center">
+        <div className="mx-auto rounded-[8px] bg-primary text-center gap-[32px] xl:px-[64px] xl:py-[32px] px-[24px] py-[32px] items-center">
           <h2 className="font-semibold xl:text-[20px] text-[16px] leading-[150%] tracking-[3%] text-white font-sans">
             Want to accelerate professional growth and development at your
             organisation?
