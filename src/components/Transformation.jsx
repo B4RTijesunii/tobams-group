@@ -45,11 +45,11 @@ function Transformation() {
           </div>
 
           <div className="w-full xl:w-1/2 flex flex-col gap-4 bg-[#FDE4E7] p-6 ">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 radius-[12px] gap-2.5">
               {items.map((item) => (
                 <div
                   key={item}
-                  className="flex items-center gap-2 bg-white rounded-md px-4 py-3 text-[14px] xl:text-[18px] font-normal text-main-text"
+                  className="flex items-center gap-2 bg-white p-[16px] text-[14px] xl:text-[18px] font-normal text-main-text"
                 >
                   <LightningIcon className="w-4 h-4 text-primary shrink-0" />
                   {item}
@@ -57,7 +57,7 @@ function Transformation() {
               ))}
             </div>
 
-            <button className="self-start bg-primary text-white px-6 py-3 rounded-[4px] text-sm font-semibold inline-flex items-center gap-2">
+            <button className="self-start bg-primary text-white px-6 py-3 rounded-sm text-sm font-semibold inline-flex items-center gap-2">
               Learn More
               <ArrowUpRight className="w-4 h-4" />
             </button>
