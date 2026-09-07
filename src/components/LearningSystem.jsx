@@ -200,7 +200,6 @@ function LearningSystem() {
           </div>
         </div>
       </section>
-      {/* management div */}
     </>
   );
 }

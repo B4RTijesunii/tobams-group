@@ -12,6 +12,6 @@ also, this was built as a single page with multiple components instead of writin
 
 Claude.ai was used to write the codes for the testimonial section.
 
-live link:
+live link: https://tobams-group-nine.vercel.app/
 
-github repo link:
+github repo link: https://github.com/B4RTijesunii/tobams-group
