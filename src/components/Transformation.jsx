@@ -15,7 +15,7 @@ function Transformation() {
 
   return (
     <section className="py-12 px-6 xl:py-20 xl:px-16">
-      <div className="max-w-[1312px] mx-auto bg-[#EF435333] rounded-[16px] p-6 xl:p-10 flex flex-col gap-6">
+      <div className="max-w-328 mx-auto bg-[#EF435333] rounded-2xl p-6 xl:p-10 flex flex-col gap-6">
         <div className="w-full">
           <p className="xl:text-[20px] text-[14px] text-[#1671D9] italic font-semibold">
             Learning With Our CEO:
@@ -40,7 +40,7 @@ function Transformation() {
             <img
               src={transformation}
               alt="Transformation Hub"
-              className="w-full h-auto xl:absolute xl:inset-0 xl:h-full rounded-[8px] object-cover"
+              className="w-full h-auto xl:absolute xl:inset-0 xl:h-full rounded-lg object-cover"
             />
           </div>
 
@@ -49,7 +49,7 @@ function Transformation() {
               {items.map((item) => (
                 <div
                   key={item}
-                  className="flex items-center gap-2 bg-white p-[16px] text-[14px] xl:text-[18px] font-normal text-main-text"
+                  className="flex items-center gap-2 bg-white p-4 text-[14px] xl:text-[18px] font-normal text-main-text"
                 >
                   <LightningIcon className="w-4 h-4 text-primary shrink-0" />
                   {item}

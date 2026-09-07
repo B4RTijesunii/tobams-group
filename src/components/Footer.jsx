@@ -1,10 +1,11 @@
 import logo from "../assets/tobams-logo.png";
-import { Linkedin, Instagram, Twitter, Mail, Phone } from "lucide-react";
+import { FaLinkedin, FaInstagram, FaXTwitter } from "react-icons/fa6";
+import { Mail, Phone } from "lucide-react";
 
 function Footer() {
   return (
-    <footer className="w-full bg-[#1D0617] text-white py-10 px-6 xl:px-16">
-      <div className="max-w-[1312px] mx-auto flex flex-col gap-10">
+    <footer className="w-full bg-[#11040E] text-white py-10 px-6 xl:px-16">
+      <div className="max-w-328 mx-auto flex flex-col gap-10">
         <div className="grid grid-cols-1 xl:grid-cols-4 gap-8">
           <div>
             <img src={logo} className="h-10 w-auto mb-4" alt="Tobams Group" />
@@ -19,19 +20,19 @@ function Footer() {
                 href="#"
                 className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center"
               >
-                <Linkedin className="w-4 h-4" />
+                <FaLinkedin className="w-4 h-4" />
               </a>
               <a
                 href="#"
                 className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center"
               >
-                <Instagram className="w-4 h-4" />
+                <FaInstagram className="w-4 h-4" />
               </a>
               <a
                 href="#"
                 className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center"
               >
-                <Twitter className="w-4 h-4" />
+                <FaXTwitter className="w-4 h-4" />
               </a>
             </div>
           </div>
@@ -79,10 +80,10 @@ function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/10 pt-8 grid grid-cols-1 xl:grid-cols-3 gap-8">
+        <div className="border-t border-white/10 bg-[#1F131C] pt-8 grid grid-cols-1 xl:grid-cols-3 gap-8 px-6 py-6 rounded-lg">
           <div>
             <h3 className="font-semibold mb-2">Registered Offices</h3>
-            <p className="text-sm text-[#E24C4B] font-medium">United Kingdom</p>
+            <p className="text-sm text-secondary font-medium">United Kingdom</p>
             <p className="text-sm text-white/70">
               07451196 (Registered by Company House)
             </p>
@@ -92,20 +93,20 @@ function Footer() {
             </p>
           </div>
           <div>
-            <p className="text-sm text-[#E24C4B] font-medium mt-6 xl:mt-0">
+            <p className="text-sm text-secondary font-medium mt-6 xl:mt-0">
               Nigeria
             </p>
-            <p className="text-sm text-white/70">
+            <p className="text-sm text-white ">
               RC 1048722 (Registered by the Corporate Affairs Commission)
             </p>
-            <p className="text-sm text-white/70">4, Muaz Close, Angwar-Rimi</p>
+            <p className="text-sm text-white">4, Muaz Close, Angwar-Rimi</p>
           </div>
           <div>
             <h3 className="font-semibold mb-2">Contact Information</h3>
-            <p className="text-sm text-white/70 flex items-center gap-2">
+            <p className="text-sm text-white flex items-center gap-2">
               <Mail className="w-4 h-4" /> theteam@tobamsgroup.com
             </p>
-            <p className="text-sm text-white/70 flex items-center gap-2 mt-1">
+            <p className="text-sm text-white flex items-center gap-2 mt-1">
               <Phone className="w-4 h-4" /> +447886600748
             </p>
           </div>

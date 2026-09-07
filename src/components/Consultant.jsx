@@ -23,7 +23,7 @@ function Consultant() {
   return (
     <>
       <section className="w-full py-10 px-6 xl:px-16 bg-[#5712441A]">
-        <div className="max-w-[1312px] mx-auto flex flex-col gap-[10px]">
+        <div className="max-w-328 mx-auto flex flex-col gap-2.5">
           <h2 className="font-sans font-bold text-[24px] xl:text-[40px] text-primary">
             Training The Consultant
           </h2>
@@ -54,15 +54,20 @@ function Consultant() {
             ))}
           </div>
 
-          <button className="self-start bg-primary text-white py-[10.5px] px-6 gap-2 rounded-md text-sm font-medium inline-flex items-center gap-2 hover:bg-primary-hover transition-colors">
+          <button className="self-start bg-primary text-white py-[10.5px] px-6 gap-2 rounded-md text-sm font-medium inline-flex items-center hover:bg-primary-hover transition-colors">
             Learn More
             <ArrowUpRight className="w-4 h-4" />
           </button>
         </div>
       </section>
-      <section className="gap-[32px] xl:px-[64px] xl:py-[32px] px-[24px] py-[32px] bg-white">
-        <div className="mx-auto rounded-[8px] bg-primary text-center gap-[32px] xl:px-[64px] xl:py-[32px] px-[24px] py-[32px] items-center">
-          <h2 className="font-semibold xl:text-[20px] text-[16px] leading-[150%] tracking-[3%] text-white font-sans">
+      <section className="w-full bg-white px-6 py-10 xl:px-24 xl:py-16">
+        <div className="max-w-275 mx-auto rounded-lg bg-primary text-center px-6 py-8 xl:px-16 xl:py-10 flex flex-col items-center gap-2.5">
+          <p className="xl:hidden font-semibold text-[16px] leading-[150%] tracking-[3%] text-white font-sans">
+            Don't just dream it—let's build it! Click now and start your project
+            with Tobams Group. Your journey to digital excellence begins here.
+          </p>
+
+          <h2 className="hidden xl:block font-semibold text-[20px] leading-[150%] tracking-[3%] text-white font-sans">
             Want to accelerate professional growth and development at your
             organisation?
             <br />
