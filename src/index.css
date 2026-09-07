@@ -8,3 +8,7 @@
   --color-main-text: #151515;
   --color-subdued: #696969;
 }
+html,
+body {
+  overflow-x: hidden;
+}

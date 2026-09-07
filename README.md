@@ -1,16 +1,17 @@
-# React + Vite
+Tobams Group Frontend Training Assessment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Tech Stack: React, Vite, TailwindCSS, lucide-react, react-logos
 
-Currently, two official plugins are available:
+setup instructions: npm install, npm run dev
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+figma reference: https://www.figma.com/design/wuqCLkK1feTgB6xxSRRwZu/Frontend-Intern-Assessment?node-id=1-863&t=PIAzzDdIOKAXpoyT-0
 
-## React Compiler
+Design decisions:
+There was no specific figma reference for tablet frame, the decision was made to use Tailwind's xl as the switchpoint. So for tablet screens, the mobile design renders and "md" wass not used.
+also, this was built as a single page with multiple components instead of writing the codes in one file to make debugging easier.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Claude.ai was used to write the codes for the testimonial section.
 
-## Expanding the ESLint configuration
+live link:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+github repo link:

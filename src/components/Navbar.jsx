@@ -25,7 +25,6 @@ function Navbar() {
           alt="Tobams Group logo"
         />
 
-        {/* Desktop-only buttons */}
         <div className="hidden xl:flex items-center gap-3">
           <button className="flex items-center justify-center gap-3 w-[167px] px-4 py-2 bg-primary rounded-sm border border-primary text-white text-sm font-medium">
             <span className="flex items-center justify-center w-6 h-6 rounded-full bg-white">
@@ -39,18 +38,20 @@ function Navbar() {
           </button>
         </div>
 
-        {/* Mobile/tablet hamburger toggle */}
         <button
-          className="xl:hidden p-2"
+          className="xl:hidden w-12 h-12 rounded-2xl bg-black flex items-center justify-center"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
           aria-expanded={menuOpen}
         >
-          {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          {menuOpen ? (
+            <X className="w-6 h-6 text-white" strokeWidth={2.5} />
+          ) : (
+            <Menu className="w-6 h-6 text-white" strokeWidth={2.5} />
+          )}
         </button>
       </div>
 
-      {/* Desktop-only nav links row */}
       <div className="hidden xl:flex items-center justify-center gap-8 px-16 py-4 text-sm text-main-text border-t border-[#DDD0DA]">
         <a
           href="#"

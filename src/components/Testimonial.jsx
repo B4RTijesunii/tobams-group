@@ -4,6 +4,7 @@ import aishaImg from "../assets/Aisha.png";
 import johnImg from "../assets/John.png";
 import chinonsoImg from "../assets/Chinonso.png";
 import lastImg from "../assets/peek.jpg";
+
 function Testimonials() {
   const scrollRef = useRef(null);
 
@@ -52,33 +53,37 @@ function Testimonials() {
           Testimonials
         </h2>
 
-        <div
-          ref={scrollRef}
-          className="flex gap-4 overflow-x-auto pb-2 scroll-smooth [&::-webkit-scrollbar]:hidden"
-          style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-        >
-          {testimonials.map((t) => (
-            <div
-              key={t.name}
-              data-card
-              className="shrink-0 w-full sm:w-[60%] xl:w-[29%] border-l-2 border-[#F04354] rounded-md p-5 flex flex-col gap-3 bg-white shadow-sm"
-            >
-              <div className="flex items-center gap-3">
-                <img
-                  src={t.image}
-                  alt={t.name}
-                  className="w-10 h-10 rounded-full object-cover"
-                />
-                <div>
-                  <p className="font-semibold text-sm text-main-text">
-                    {t.name}
-                  </p>
-                  <p className="text-xs text-subdued">{t.role}</p>
+        <div className="w-full max-w-full overflow-hidden">
+          <div
+            ref={scrollRef}
+            className="flex gap-4 overflow-x-auto pb-2 scroll-smooth [&::-webkit-scrollbar]:hidden"
+            style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+          >
+            {testimonials.map((t) => (
+              <div
+                key={t.name}
+                data-card
+                className="shrink-0 w-full sm:w-[60%] xl:w-[29%] border-l-2 border-[#F04354] rounded-md p-5 flex flex-col gap-3 bg-white shadow-sm"
+              >
+                <div className="flex items-center gap-3">
+                  <img
+                    src={t.image}
+                    alt={t.name}
+                    className="w-10 h-10 rounded-full object-cover"
+                  />
+                  <div>
+                    <p className="font-semibold text-sm text-main-text">
+                      {t.name}
+                    </p>
+                    <p className="text-xs text-subdued">{t.role}</p>
+                  </div>
                 </div>
+                <p className="text-sm text-main-text leading-[150%]">
+                  {t.text}
+                </p>
               </div>
-              <p className="text-sm text-main-text leading-[150%]">{t.text}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
         <div className="flex justify-end gap-3">
